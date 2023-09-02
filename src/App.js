@@ -1,24 +1,303 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import image1 from "../src/code.jpg";
+import image2 from "../src/physicsimage.jpg";
+import image3 from "../src/phy.jpg";
+import image4 from "../src/python.jpg";
+import Navbar from "./Navbar" 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+     <Navbar/>
+
+      <br />
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src={image1} class="d-block w-100 h-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src={image2} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={image3} class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+
+      <section id="features">
+        <div class="row row2">
+          <div class="col-lg-3">
+            <div class="firstblock">
+              <i class=" hello fa-sharp fa-solid fa-arrow-trend-up fa-beat-fade"></i>
+              <h3>55%</h3>
+              <p > Average Salary Hike</p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="secondblock">
+              <i class=" hello fa-solid fa-file-pen fa-beat"></i>
+              <h3>600+</h3>
+              <p>Different Courses</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="thirdblock">
+              <i class=" hello fa-solid fa-graduation-cap fa-beat"></i>
+              <h3>400+</h3>
+              <p>Top Educators</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3  ">
+            <div class="thirdblock">
+              <i class=" hello fa-solid fa-money-bill-transfer fa-beat"></i>
+              <h3>12000+</h3>
+              <p>Career Transitions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <br />
+
+      <div class="card">
+        <img src={image4} class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Python For Beginners</h5>
+          <p class="card-text">
+            Establishes strong programming foundation. Ideal for newcomers, it
+            teaches versatile and widely-used Python language..
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="fa-solid fa-video fa-xl"></i> <span>--- </span> 22 hours
+            on-demand video
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-laptop-code fa-xl "></i>
+            <span>--- </span> 19 coding exercises
+          </li>
+          <li class="list-group-item">
+            <i class="fa-regular fa-newspaper fa-xl"></i>
+            <span>--- </span>15 articles
+          </li>
+        </ul>
+        <div class="card-body btndiv">
+          <button type="button" class="btn btn-outline-primary">
+            ₹12000
+          </button>
+          <button type="button" class="btn btn-right btn-outline-success">
+            Start Subscription
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.tutorialbar.com/wp-content/uploads/2636150_ed7d-2-2048x1152.jpg"
+          class="card-img-top"
+          alt="..."
+          height={"265px"}
+          width={"200px"}
+        />
+        <div class="card-body">
+          <h5 class="card-title">Java For Beginners</h5>
+          <p class="card-text">
+            Establishes strong programming foundation. Ideal for newcomers, it
+            teaches versatile and widely-used Python language..
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="fa-solid fa-video fa-xl"></i> <span>--- </span> 22 hours
+            on-demand video
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-laptop-code fa-xl "></i>
+            <span>--- </span> 19 coding exercises
+          </li>
+          <li class="list-group-item">
+            <i class="fa-regular fa-newspaper fa-xl"></i>
+            <span>--- </span>15 articles
+          </li>
+        </ul>
+        <div class="card-body btndiv">
+          <button type="button" class="btn btn-outline-primary">
+            ₹12000
+          </button>
+          <button type="button" class="btn btn-right btn-outline-success">
+            Start Subscription
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.incredibuild.com/wp-content/uploads/2021/09/Microservices_and_C_800x533-005.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">C++ For Beginners</h5>
+          <p class="card-text">
+            Establishes strong programming foundation. Ideal for newcomers, it
+            teaches versatile and widely-used Python language..
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <i class="fa-solid fa-video fa-xl"></i> <span>--- </span> 22 hours
+            on-demand video
+          </li>
+          <li class="list-group-item">
+            <i class="fa-solid fa-laptop-code fa-xl "></i>
+            <span>--- </span> 19 coding exercises
+          </li>
+          <li class="list-group-item">
+            <i class="fa-regular fa-newspaper fa-xl"></i>
+            <span>--- </span>15 articles
+          </li>
+        </ul>
+        <div class="card-body btndiv">
+          <button type="button" class="btn btn-outline-primary">
+            ₹12000
+          </button>
+          <button type="button" class="btn btn-right btn-outline-success">
+            Start Subscription
+          </button>
+        </div>
+      </div>
+
+  
+      <footer class="footer-distributed">
+        <div class="footer-left">
+          <h3>
+            Education<span>Stop</span>
+          </h3>
+
+          <p class="footer-links">
+            <a href="#" class="link-1">
+              Home
+            </a>
+
+            <a href="#">Blog</a>
+
+            <a href="#">Pricing</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Faq</a>
+
+            <a href="#">Contact</a>
+          </p>
+
+          <p class="footer-company-name">omkar tuptewar © 2023</p>
+        </div>
+
+        <div class="footer-center">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p>
+              <span></span> MANIT BHOPAL
+            </p>
+          </div>
+
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 9421664678</p>
+          </div>
+
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p>
+              <a href="mailto:support@company.com">educationstop@company.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p class="footer-company-about">
+            <span>About the company</span>
+            To provide quality and free education at the lowest price
+          </p>
+
+          <div class="footer-icons">
+            <a href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 }
 
